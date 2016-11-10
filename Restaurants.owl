@@ -1,0 +1,804 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#"
+     xml:base="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants/1.1"/>
+        <rdfs:comment xml:lang="en">added disjoint classes, fixed data types from integers to float, reasoner now accept ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressSuburb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressSuburb">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Menu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Menu"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForBreakfast -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForBreakfast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForDinner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForDinner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForLunch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpenForLunch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpeningHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OpeningHours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PostCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PostCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PriceRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PriceRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#acceptsReservations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#acceptsReservations">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenMenu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenMenu">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cousineRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cousineRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#endDateAndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#endDateAndTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#freeWiFi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#freeWiFi">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#glutenFreeDishes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#glutenFreeDishes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForBusinessMeeting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForBusinessMeeting">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForGroups -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForGroups">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForRomanticDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForRomanticDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForSpecialOccasion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForSpecialOccasion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#locationRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#locationRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#parkingLot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#parkingLot">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#qualityPriceRatio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#qualityPriceRatio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#servesTypeOfFood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#servesTypeOfFood">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#serviceRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#serviceRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#startDateAndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#startDateAndTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#tablesOutside -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#tablesOutside">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#takeAwayService -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#takeAwayService">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#vegetarianDishes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#vegetarianDishes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#wheelchairAccessible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#wheelchairAccessible">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlcoholcicDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlcoholcicDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ColdDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ColdDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Dessert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Dessert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Digestive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Digestive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Foodstuff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FirstCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FirstCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FishCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FishCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SecondCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Foodstuff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Foodstuff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Foodstuff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HotDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HotDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LiteraryEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LiteraryEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MeatCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MeatCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SecondCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicalEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#NonAlcoholicDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#NonAlcoholicDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FirstCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piadineria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piadineria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FirstCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SecondCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SecondCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SideDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SideDish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FirstCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Starter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Starter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ThemedEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ThemedEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VegetarianCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VegetarianCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SecondCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+        <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114802</Population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
