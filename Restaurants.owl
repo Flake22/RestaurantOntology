@@ -420,6 +420,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+        <rdfs:comment>a district defined for administrative purposes</rdfs:comment>
     </owl:Class>
     
 
@@ -428,13 +429,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>the business of providing holidays for people on farms or in the countryside</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact">
+        <rdfs:comment>a man-made object taken as a whole</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -442,6 +446,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a counter where you can obtain food or drink</rdfs:comment>
+        <rdfs:comment>a room or establishment where alcoholic drinks are served over a counter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a small informal restaurant; serves wine</rdfs:comment>
     </owl:Class>
     
 
@@ -450,6 +465,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
+        <rdfs:comment>a structure that has a roof and walls and stands more or less permanently in one place</rdfs:comment>
     </owl:Class>
     
 
@@ -458,6 +474,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a small restaurant where drinks and snacks are sold</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>event devoted to children</rdfs:comment>
     </owl:Class>
     
 
@@ -466,6 +492,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+        <rdfs:comment>a large and densely populated urban area; may include several independent administrative districts</rdfs:comment>
     </owl:Class>
     
 
@@ -474,14 +501,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Competition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Competition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>a building that is used for business activities</rdfs:comment>
     </owl:Class>
     
 
@@ -490,22 +510,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Contest -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Contest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Competition"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Convention -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Convention">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocietalEvent"/>
+        <rdfs:comment>a thing constructed; a complex entity constructed of many parts</rdfs:comment>
     </owl:Class>
     
 
@@ -514,6 +519,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+        <rdfs:comment>a politically organized body of people under a single government</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>festival featuring arts and events specific to a particular culture, especially one celebrating and promoting that culture in a wider public context</rdfs:comment>
     </owl:Class>
     
 
@@ -522,6 +537,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding"/>
+        <rdfs:comment>a public place where food and drinks are served for a fee</rdfs:comment>
     </owl:Class>
     
 
@@ -529,7 +545,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Perdurant"/>
+        <rdfs:comment>something that happens at a given place and time</rdfs:comment>
     </owl:Class>
     
 
@@ -538,6 +554,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>inexpensive food (hamburgers or chicken or milkshakes) prepared and served quickly</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>an event that uses food as its central theme</rdfs:comment>
     </owl:Class>
     
 
@@ -552,6 +578,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>A mountain hut (also known as alpine hut, mountain shelter, mountain refuge, mountain lodge, and mountain hostel) is a building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers.</rdfs:comment>
     </owl:Class>
     
 
@@ -559,7 +586,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocietalEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>an entertainment event featuring a number of musical performers or bands of a certain genre or centered on a theme</rdfs:comment>
     </owl:Class>
     
 
@@ -568,34 +596,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethodCreditCard -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethodCreditCard">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Perdurant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Perdurant"/>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piadineria -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piadineria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>in Italy was originally a place serving wine and simple food. Lately, the emphasis has shifted to the food, but menus tend to be short, with an emphasis on local specialities such as pasta, grilled meat or fish, and often served at shared tables</rdfs:comment>
     </owl:Class>
     
 
@@ -604,6 +605,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a shop where pizzas are made and sold</rdfs:comment>
     </owl:Class>
     
 
@@ -612,6 +614,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>tavern consisting of a building with a bar and public rooms; often provides light meals</rdfs:comment>
     </owl:Class>
     
 
@@ -620,14 +623,25 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a building where people go to eat</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocietalEvent -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocietalEvent">
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival"/>
+        <rdfs:comment>any meeting for an exchange of ideas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:comment>an event characteristic of persons forming groups</rdfs:comment>
     </owl:Class>
     
 
@@ -636,6 +650,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>a restaurant that specializes in steaks</rdfs:comment>
     </owl:Class>
     
 
@@ -644,6 +659,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+        <rdfs:comment>a residential district located on the outskirts of a city</rdfs:comment>
     </owl:Class>
     
 
@@ -652,6 +668,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:comment>A trattoria is an Italian-style eating establishment, less formal than a ristorante, but more formal than an osteria. There are generally no printed menus, the service is casual, wine is sold by the decanter rather than the bottle, prices are low, and the emphasis is on a steady clientele rather than on haute cuisine. The food is modest but plentiful (mostly following regional and local recipes) and in some instances is even served family-style (i.e. at common tables)</rdfs:comment>
     </owl:Class>
     
 
@@ -664,62 +681,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericanExpress -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericanExpress">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethodCreditCard"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ByBankTranserInAdvance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ByBankTranserInAdvance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ByInvoice -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ByInvoice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#COD -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#COD">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cash -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cash">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CheckInAdvance -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CheckInAdvance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DirectDebit -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DirectDebit">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
     
 
 
@@ -739,22 +700,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MasterCard -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MasterCard">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethodCreditCard"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaySwarm -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaySwarm">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethod"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento">
@@ -764,19 +709,30 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VISA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VISA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PaymentMethodCreditCard"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
