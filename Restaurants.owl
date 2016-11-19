@@ -59,9 +59,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#hostEvent -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#hosts -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#hostEvent"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#hosts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+    </owl:ObjectProperty>
     
 
 
@@ -684,10 +695,957 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italy -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AiCanopi -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italy">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AiCanopi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <AddressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via ai Bolleri, 12/6</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>domenica 12:00 - 14:30 18:00 - 23:30 lunedì 12:00 - 14:30 18:00 - 23:30 martedì 12:00 - 14:30 18:00 - 23:30 mercoledì 12:00 - 14:30 18:00 - 23:30 giovedì 12:00 - 14:30 18:00 - 23:30 venerdì 12:00 - 14:30 18:00 - 23:30 sabato 12:00 - 14:30 18:00 - 23:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461823663</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Indian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlDuomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlDuomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Verdi, 77</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>lunedì 12:00 - 14:30 19:00 - 23:30 martedì 12:00 - 14:30 19:00 - 23:30 mercoledì 12:00 - 14:30 19:00 - 23:30 giovedì 12:00 - 14:30 19:00 - 23:30 venerdì 12:00 - 14:30 19:00 - 23:30 sabato 12:00 - 14:30 19:00 - 23:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461262087</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaBaracca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaBaracca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <AddressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Galassa 12</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>lunedì 07:00 - 20:00 martedì 07:00 - 00:00 mercoledì 07:00 - 00:00 giovedì 07:00 - 00:00 venerdì 07:00 - 00:00 sabato 07:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461920049</phoneNumber>
+        <postCode>38123</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaGrotta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaGrotta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Vicolo San Marco 6</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461987197</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlleGorghe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlleGorghe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Strada Alle Gorghe 17 | Vigo Meano</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <openingHours>domenica 18:30 - 23:0012:00 - 15:30 lunedì 18:30 - 23:00 giovedì 18:30 - 23:00 venerdì 18:30 - 23:00 sabato 18:30 - 23:0012:00 - 15:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461448268</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Austrian, International</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Ezio Maccani 191/d</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <openingHours>Venerdì 12–15, 18:30–01 Sabato 12–01 Domenica 12–01 Lunedì 12–15, 18:30–00 Martedì 12–15, 18:30–00 Mercoledì 12–15, 18:30–00 Giovedì 12–15, 18:30–00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461826673</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>American</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Anfiteatro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Anfiteatro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazzetta Dell&apos;Anfiteatro 10 | Vicolo San marco</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>lunedì 12:00 - 14:3018:00 - 00:00 martedì 12:00 - 14:3018:00 - 00:00 mercoledì 12:00 - 14:3018:00 - 00:00 giovedì 12:00 - 14:3018:00 - 00:00 venerdì 12:00 - 14:3018:00 - 00:00 sabato 12:00 - 14:3018:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461233389</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>American, Steak, Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaBirreriaPedavena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaBirreriaPedavena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Piazza di Fiera 13</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 09:00 - 00:30 lunedì 09:00 - 00:30 martedì 09:00 - 00:30 mercoledì 09:00 - 00:30 giovedì 09:00 - 00:30 venerdì 09:00 - 00:30 sabato 09:00 - 00:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461986255</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, European, Steak-house, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaTrattoriaDueMori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaTrattoriaDueMori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via San Marco, 11</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 19:00 - 22:0012:00 - 14:30 martedì 12:00 - 14:3019:00 - 22:30 mercoledì 12:00 - 14:3019:00 - 22:30 giovedì 12:00 - 14:3019:00 - 22:30 venerdì 12:00 - 14:3019:00 - 22:30 sabato 12:00 - 14:3019:00 - 22:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461984251</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#BollicineEMusica2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#BollicineEMusica2016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>28/05/2016 – 23.30</endDateAndTime>
+        <startDateAndTime>28/05/2016 – 18.30</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Brigolina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Brigolina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Strada Di Candriai, 6</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461947474</phoneNumber>
+        <postCode>38123</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CasadelCioccolato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CasadelCioccolato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via Rodolfo Belenzani, 21</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461234352</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Drink</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Clesio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Clesio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Vittorio Alfieri 1</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 12:30 - 14:3019:30 - 22:30 lunedì 12:30 - 14:3019:30 - 22:30 martedì 12:30 - 14:3019:30 - 22:30 mercoledì 12:30 - 14:3019:30 - 22:30 giovedì 12:30 - 14:3019:30 - 22:30 venerdì 12:30 - 14:3019:30 - 22:30 sabato 12:30 - 14:3019:30 - 22:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461271000</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Crucolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Crucolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Loc. Val Campelle | Localita Val Campelle</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 09:00 - 22:00 lunedì 09:00 - 22:00 martedì 09:00 - 16:00 giovedì 09:00 - 22:00 venerdì 09:00 - 22:00 sabato 09:00 - 02:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461766093</phoneNumber>
+        <postCode>38050</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DOC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DOC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Milano, 148</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>domenica 17:00 - 23:45 lunedì 08:00 - 23:45 martedì 08:00 - 23:45 mercoledì 08:00 - 23:45 giovedì 08:00 - 23:45 venerdì 08:00 - 23:45 sabato 17:00 - 23:45</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461262022</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Drink</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DaAlbert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DaAlbert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via Bernardino Bomporto, 2</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461231712</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Duo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Duo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Torre Vanga, 14</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>lunedì 18:00 - 00:00 martedì 18:00 - 00:00 mercoledì 18:00 - 00:00 giovedì 18:00 - 00:00 venerdì 18:00 - 00:00 sabato 18:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">046115940461</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Everest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Everest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Corso Alpini 14</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461825300</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean, Pizza, International</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Fiorentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Fiorentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via Calepina 4</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461236147</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Drink, Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ForsterbrauTrento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ForsterbrauTrento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Oss Mazzurana 38</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 07:00 - 23:00 lunedì 07:00 - 23:00 martedì 07:00 - 23:00 mercoledì 07:00 - 23:00 giovedì 07:00 - 23:00 venerdì 07:00 - 23:00 sabato 07:00 - 23:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461235590</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Austrian, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FrenchDinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FrenchDinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>23/11/2016 – 22.30</endDateAndTime>
+        <startDateAndTime>23/11/2016 – 19.30</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GamberoRosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GamberoRosso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Torre d&apos;Augusto N. 25</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461987211</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GreenTower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GreenTower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Torre Verde, 29</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 12:00 - 02:00 lunedì 12:00 - 02:00 martedì 12:00 - 02:00 mercoledì 12:00 - 02:00 giovedì 12:00 - 02:00 venerdì 12:00 - 02:00 sabato 12:00 - 02:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461231545</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Mediterranean, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenByPasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenByPasi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>31/10/2016 – 23:30</endDateAndTime>
+        <startDateAndTime>31/10/2016 – 19:00</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenConLaMagia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenConLaMagia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>31/10/2016 – 20:30</endDateAndTime>
+        <startDateAndTime>31/10/2016 – 19:30</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HappyHour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HappyHour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Fratelli Perini 57</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 11:30 - 14:30 martedì 11:00 - 14:3018:30 - 22:30 mercoledì 11:00 - 14:3018:30 - 22:30 giovedì 11:00 - 14:3018:30 - 22:30 venerdì 11:00 - 14:3018:30 - 22:30 sabato 11:00 - 14:3018:30 - 22:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461392394</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#IlCappello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#IlCappello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazzetta Bruno Lunelli 5</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461235850</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Don Arcangelo Rizzi 11</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <openingHours>lunedì 19:30 - 22:00 martedì 19:30 - 22:0012:00 - 14:00 mercoledì 19:30 - 22:0012:00 - 14:00 giovedì 19:30 - 22:0012:00 - 14:00 venerdì 19:30 - 22:0012:00 - 14:00 sabato 19:30 - 22:0012:00 - 14:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461234343</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Maranza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Maranza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>strada per maranza 23</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04611862232</phoneNumber>
+        <postCode>30123</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
     </owl:NamedIndividual>
     
 
@@ -696,6 +1654,593 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Malpaga, 20</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <openingHours>lunedì 11:30 - 14:30 martedì 11:30 - 14:30 18:00 - 23:00 mercoledì 11:30 - 14:30 18:00 - 23:00 giovedì 18:00 - 23:00 09:30 - 14:30 venerdì 18:00 - 23:00 11:30 - 14:30 sabato 18:00 - 23:00 09:30 – 14:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04611822401</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Alto Adige 164/B</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>domenica 16:00 - 02:00 martedì 10:00 - 01:00 mercoledì 10:00 - 01:00 giovedì 10:00 - 01:00 venerdì 10:00 - 02:00 sabato 16:00 - 02:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461993261</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OldWildWest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OldWildWest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazza Delle Ddonne Lavoratrici, 13 | Corso Del Lavoro e Della Scienza</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <openingHours>domenica 11:30 - 00:30 lunedì 12:00 - 15:3018:30 - 00:30 martedì 12:00 - 15:3018:30 - 00:30 mercoledì 12:00 - 15:3018:30 - 00:30 giovedì 12:00 - 15:3018:30 - 00:30 venerdì 12:00 - 15:3018:30 - 01:30 sabato 12:00 - 01:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3900461915572</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</qualityPriceRatio>
+        <servesTypeOfFood>American, Steak-house</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Orient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Orient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Don Giovanni Battista Zanella 3</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>lunedì 12:00 - 14:30 17:30 - 23:00 martedì 12:00 - 14:30 17:30 - 23:00 mercoledì 12:00 - 14:30 17:30 - 23:00 giovedì 12:00 - 14:30 17:30 - 23:00 venerdì 12:00 - 14:30 17:30 - 23:00 sabato 12:00 - 14:30 17:30 - 23:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461234435</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Sushi, Chinase</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OrsoGrigio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OrsoGrigio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Degli Orti 19</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>lunedì 12:00 - 00:00 martedì 12:00 - 00:00 mercoledì 12:00 - 00:00 giovedì 12:00 - 00:00 venerdì 12:00 - 00:00 sabato 12:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461984400</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Piazza Mario Pasi 2</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461982301</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Drink, Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PersianDinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PersianDinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>12/10/2016 – 22:30</endDateAndTime>
+        <startDateAndTime>12/10/2016 – 19:30</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PeruvianDinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PeruvianDinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>3/11/2016 – 22:30</endDateAndTime>
+        <startDateAndTime>3/11/2016 – 18:30</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piedicastello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piedicastello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazza di Piedicastello 12</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 12:00 - 14:00 lunedì 12:00 - 14:0019:30 - 22:00 martedì 12:00 - 14:0019:30 - 22:00 mercoledì 12:00 - 14:0019:30 - 22:00 giovedì 12:00 - 14:0019:30 - 22:00 venerdì 12:00 - 14:0019:30 - 22:00 sabato 12:00 - 14:0019:30 - 22:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461230730</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Plan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Plan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Largo Giosue&apos; Carducci 38</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04611740400</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Drink, Steak-house</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Planet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Planet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via Padre Eusebio Chini 33</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 17:00 - 22:00 lunedì 11:00 - 14:0017:00 - 22:00 mercoledì 11:00 - 14:0017:00 - 22:00 giovedì 11:00 - 14:0017:00 - 22:00 venerdì 11:00 - 14:0017:00 - 22:00 sabato 17:00 - 22:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461390836</phoneNumber>
+        <postCode>38123</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</qualityPriceRatio>
+        <servesTypeOfFood>Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>04/12/2016 – 24:00</endDateAndTime>
+        <startDateAndTime>04/12/2016 – 21:00</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RoadhouseGrill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RoadhouseGrill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via del Brennero 146</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <openingHours>domenica 12:00 - 15:0018:30 - 23:30 lunedì 12:00 - 15:0018:30 - 23:30 martedì 12:00 - 15:0018:30 - 23:30 mercoledì 12:00 - 15:0018:30 - 23:30 giovedì 12:00 - 15:0018:30 - 23:30 venerdì 12:00 - 15:0018:30 - 23:30 sabato 12:00 - 15:0018:30 - 23:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461825493</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</qualityPriceRatio>
+        <servesTypeOfFood>Barbecue, Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SaporiMediterranei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SaporiMediterranei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via R. da Sanseverino 39/4 | Vicino al MUSE</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</locationRating>
+        <openingHours>domenica 12:00 - 14:3019:00 - 23:30 lunedì 12:00 - 14:3019:00 - 23:30 martedì 12:00 - 14:3019:00 - 23:30 mercoledì 12:00 - 14:3019:00 - 23:30 giovedì 12:00 - 14:3019:00 - 23:30 venerdì 12:00 - 14:3019:00 - 23:30 sabato 12:00 - 14:3019:00 - 23:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461984360</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Mediterranean, Pizza, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Saporoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Saporoso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Dei Mille 1</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <openingHours>domenica 12:00 - 14:30 18:30 - 22:30 martedì 12:00 - 14:30 18:30 - 22:30 mercoledì 12:00 - 14:30 18:30 - 22:30 giovedì 12:00 - 14:30 18:30 - 22:30 venerdì 12:00 - 14:30 18:30 - 22:30 sabato 12:00 - 14:30 18:30 – 22:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461391118</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</qualityPriceRatio>
+        <servesTypeOfFood>Sushi, Thai</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Subway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Subway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via Rodolfo Belenzani 43-45</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</locationRating>
+        <openingHours>domenica 09:00 - 23:00 lunedì 09:00 - 23:00 martedì 09:00 - 23:00 mercoledì 09:00 - 23:00 giovedì 09:00 - 23:00 venerdì 09:00 - 23:00 sabato 09:00 - 23:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3333599472</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>American</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Terramia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Terramia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Calepina 39</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 12:00 - 15:0018:30 - 22:30 martedì 12:00 - 15:0018:30 - 22:30 mercoledì 12:00 - 15:0018:30 - 22:30 giovedì 12:00 - 15:0018:30 - 22:30 venerdì 12:00 - 15:0018:30 - 22:30 sabato 12:00 - 15:0018:30 - 22:30</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461262666</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</qualityPriceRatio>
+        <servesTypeOfFood>Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>3/009/2016 – 2:00</endDateAndTime>
+        <startDateAndTime>2/09/2016 – 23:00</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tognola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tognola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Passo Rolle 21 | Alpe Tognola</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 08:30 - 17:00 lunedì 08:30 - 17:00 martedì 08:30 - 17:00 mercoledì 08:30 - 17:00 giovedì 08:30 - 17:00 venerdì 08:30 - 17:00 sabato 08:30 - 17:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43968329</phoneNumber>
+        <postCode>38054</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
     </owl:NamedIndividual>
     
 
@@ -709,10 +2254,377 @@
     
 
 
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trittico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trittico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazza del Tridente 19</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461421104</phoneNumber>
+        <postCode>38121</postCode>
+        <priceRange>Medium-Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via dietro le Mura A 53</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04611903162</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Drink, Pizza, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VecchiaTrento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VecchiaTrento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Santa Croce 88</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>domenica 08:00 - 00:00 lunedì 08:00 - 00:00 martedì 08:00 - 00:00 mercoledì 08:00 - 00:00 giovedì 08:00 - 00:00 venerdì 08:00 - 00:00 sabato 08:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461235352</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Indian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Localita Ponte Alto 26 | Cognola</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461986220</phoneNumber>
+        <postCode>38100</postCode>
+        <priceRange>High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Mediterranean, European</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Viote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Viote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Strada Delle Viote 6 | Monte Bondone</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461948033</phoneNumber>
+        <postCode>38123</postCode>
+        <priceRange>Medium</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlVo’ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlVo’">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Vicolo del Vo, 11</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461985374</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AperitemaSull&apos;Amore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AperitemaSull&apos;Amore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar"/>
+        <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
+        <endDateAndTime>14/03/2014 – 23:00</endDateAndTime>
+        <startDateAndTime>14/03/2014 – 19:00</startDateAndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#McDonald’s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#McDonald’s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
+        <adressStreet>Via di Madonna Bianca 5</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2.5</locationRating>
+        <openingHours>domenica 11:00 - 01:00 lunedì 11:00 - 01:00 martedì 11:00 - 01:00 mercoledì 11:00 - 01:00 giovedì 11:00 - 01:00 venerdì 11:00 - 01:00 sabato 11:00 - 03:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461390416</phoneNumber>
+        <postCode>38123</postCode>
+        <priceRange>Low</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>American</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Niky’s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Niky’s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via San Pio X 29</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>lunedì 12:00 - 14:3018:30 - 23:00 martedì 12:00 - 14:3018:30 - 23:00 mercoledì 12:00 - 14:3018:30 - 23:00 giovedì 12:00 - 14:3018:30 - 23:00 venerdì 12:00 - 14:3018:30 - 23:00 sabato 12:00 - 14:3018:30 - 23:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461390828</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RosaD’Oro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RosaD’Oro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Piazza Santa Maria Maggiore 21</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <openingHours>lunedì 12:00 - 14:30 19:00 - 00:00 martedì 12:00 - 14:30 19:00 - 00:00 mercoledì 12:00 - 14:30 19:00 - 00:00 giovedì 12:00 - 14:30 19:00 - 00:00 venerdì 12:00 - 14:30 19:00 - 00:00 sabato 12:00 - 14:30 19:00 - 00:00</openingHours>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461261792</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, European, Pizza, Mediterranean</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tetley’s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tetley’s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
+        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <adressStreet>Via Degli Orti 1</adressStreet>
+        <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
+        <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cousineRating>
+        <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeWiFi>
+        <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
+        <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
+        <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpenForDinner>
+        <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForLunch>
+        <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForBusinessMeeting>
+        <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForGroups>
+        <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForRomanticDate>
+        <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSuitableForSpecialOccasion>
+        <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</locationRating>
+        <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</parkingLot>
+        <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0461233477</phoneNumber>
+        <postCode>38122</postCode>
+        <priceRange>Medium-High</priceRange>
+        <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</qualityPriceRatio>
+        <servesTypeOfFood>Italian, Pizza, Drink</servesTypeOfFood>
+        <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3.5</serviceRating>
+        <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
+        <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAwayService>
+        <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
+        <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
     </owl:NamedIndividual>
     
 

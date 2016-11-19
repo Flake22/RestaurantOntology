@@ -1,1 +1,36 @@
-^([A-Za-z’&]+);([A-Za-z]+);([0-9\.]+);([0-9\.]+);([0-9\.]+);([0-9\.]+);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);([A-Za-z\-]+);([A-Za-z, \-]+);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);([0-9]+);(.+);ADDRESS;([A-Za-z]+);([0-9]+);([A-Za-z0-9,'\.\/\|\- ]+);([A-Za-z]+);([A-Za-z]+)
+^([A-Za-z’]+);([A-Za-z]+);([0-9\.]+);([0-9\.]+);([0-9\.]+);([0-9\.]+);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);([A-Za-z\-]+);([A-Za-z, \-]+);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);(true|false);([0-9]+);(.+);ADDRESS;([A-Za-z]+);([0-9]+);([A-Za-z0-9,'\.\/\|\- ]+);([A-Za-z]+);([A-Za-z]+)
+
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#$1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#$2"/>        
+    <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">$3</cousineRating>
+    <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">$4</serviceRating>
+    <qualityPriceRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">$5</qualityPriceRatio>
+    <locationRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">$6</locationRating>
+    <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$7</wheelchairAccessible>
+    <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$8</acceptsReservations>
+    <parkingLot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$9</parkingLot>
+    <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$10</tablesOutside>
+    <takeAwayService rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$11</takeAwayService>
+    <freeWiFi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$12</freeWiFi>
+    <priceRange>$13</priceRange>
+    <servesTypeOfFood>$14</servesTypeOfFood>
+    <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$15</glutenFreeDishes>
+    <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$16</vegetarianDishes>
+    <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$17</childrenMenu>
+    <isSuitableForGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$18</isSuitableForGroups>
+    <isSuitableForBusinessMeeting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$19</isSuitableForBusinessMeeting>  
+    <isSuitableForRomanticDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$20</isSuitableForRomanticDate>
+    <isSuitableForSpecialOccasion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$21</isSuitableForSpecialOccasion>
+    <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$22</isOpenForBreakfast>
+    <isOpenForLunch rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$23</isOpenForLunch>
+    <isOpenForDinner rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">$24</isOpenForDinner>
+    <phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">$25</phoneNumber>
+    <openingHours>$26</openingHours>
+    <postCode>$28</postCode>
+    <adressStreet>$29</adressStreet>
+    <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#$30"/>
+    <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#$27"/>
+    <AddressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#$31"/>
+</owl:NamedIndividual>\n
