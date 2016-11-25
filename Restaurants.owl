@@ -24,37 +24,37 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCity -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCity -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCity">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCountry -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCountry -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressCountry">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressSuburb -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressSuburb -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AddressSuburb">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Address"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressSuburb">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
     </owl:ObjectProperty>
     
 
@@ -70,8 +70,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
     </owl:ObjectProperty>
     
 
@@ -91,7 +91,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#acceptsReservations">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -100,7 +100,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#adressStreet -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#adressStreet">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#spatial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -110,7 +111,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenMenu">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -120,7 +121,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cousineRating">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -130,7 +131,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#duration">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -146,7 +147,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#endDateAndTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -156,7 +157,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#freeWiFi">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -166,7 +167,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#glutenFreeDishes">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -176,7 +177,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isOpenForBreakfast">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -186,7 +187,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isOpenForDinner">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -196,7 +197,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isOpenForLunch">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -212,7 +213,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForBusinessMeeting">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -222,7 +223,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForGroups">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -232,7 +233,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForRomanticDate">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -242,7 +243,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableForSpecialOccasion">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isSuitableFor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -252,7 +253,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#locationRating">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -262,7 +263,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingHours">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -270,7 +271,9 @@
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#openingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -278,7 +281,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#parkingLot">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -287,7 +290,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#phoneNumber -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#phoneNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -296,7 +299,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#population -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#population">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -305,7 +308,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#spatial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -314,7 +318,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#priceRange -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#priceRange">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -330,7 +334,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#qualityPriceRatio">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -345,7 +349,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#servesTypeOfFood -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#servesTypeOfFood">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -355,9 +360,15 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#serviceRating">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#rating"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#spatial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#spatial"/>
     
 
 
@@ -365,7 +376,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#startDateAndTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -375,7 +386,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#tablesOutside">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -385,7 +396,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#takeAwayService">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -401,7 +412,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#vegetarianDishes">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingOption"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -411,7 +422,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#wheelchairAccessible">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#provideService"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -428,258 +439,258 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
         <rdfs:comment>a district defined for administrative purposes</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#agritourism -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#agritourism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>the business of providing holidays for people on farms or in the countryside</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact">
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact">
         <rdfs:comment>a man-made object taken as a whole</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a counter where you can obtain food or drink</rdfs:comment>
         <rdfs:comment>a room or establishment where alcoholic drinks are served over a counter</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bistro -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bistro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a small informal restaurant; serves wine</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction"/>
         <rdfs:comment>a structure that has a roof and walls and stands more or less permanently in one place</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cafe -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a small restaurant where drinks and snacks are sold</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>event devoted to children</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a large and densely populated urban area; may include several independent administrative districts</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Building"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:comment>a building that is used for business activities</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Artifact"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact"/>
         <rdfs:comment>a thing constructed; a complex entity constructed of many parts</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a politically organized body of people under a single government</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>festival featuring arts and events specific to a particular culture, especially one celebrating and promoting that culture in a wider public context</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CommercialBuilding"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:comment>a public place where food and drinks are served for a fee</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event">
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event">
         <rdfs:comment>something that happens at a given place and time</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>inexpensive food (hamburgers or chicken or milkshakes) prepared and served quickly</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>an event that uses food as its central theme</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>A mountain hut (also known as alpine hut, mountain shelter, mountain refuge, mountain lodge, and mountain hostel) is a building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>an entertainment event featuring a number of musical performers or bands of a certain genre or centered on a theme</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#osteria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#osteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>in Italy was originally a place serving wine and simple food. Lately, the emphasis has shifted to the food, but menus tend to be short, with an emphasis on local specialities such as pasta, grilled meat or fish, and often served at shared tables</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a shop where pizzas are made and sold</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>tavern consisting of a building with a bar and public rooms; often provides light meals</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a building where people go to eat</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival"/>
         <rdfs:comment>any meeting for an exchange of ideas</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>an event characteristic of persons forming groups</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a restaurant that specializes in steaks</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AdministrativeDivision"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a residential district located on the outskirts of a city</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#EatingEstabilishment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>A trattoria is an Italian-style eating establishment, less formal than a ristorante, but more formal than an osteria. There are generally no printed menus, the service is casual, wine is sold by the decanter rather than the bottle, prices are low, and the emphasis is on a steady clientele rather than on haute cuisine. The food is modest but plentiful (mostly following regional and local recipes) and in some instances is even served family-style (i.e. at common tables)</rdfs:comment>
     </owl:Class>
     
@@ -699,11 +710,11 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AiCanopi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AiCanopi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
-        <AddressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via ai Bolleri, 12/6</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -737,10 +748,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlDuomo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlDuomo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Verdi, 77</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -774,10 +785,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaBaracca -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaBaracca">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
-        <AddressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Galassa 12</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -811,10 +822,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaGrotta -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AllaGrotta">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Vicolo San Marco 6</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -847,9 +858,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlleGorghe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlleGorghe">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#agritourism"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Strada Alle Gorghe 17 | Vigo Meano</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -883,9 +894,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Ezio Maccani 191/d</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -919,9 +930,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Anfiteatro -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Anfiteatro">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazzetta Dell&apos;Anfiteatro 10 | Vicolo San marco</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -955,9 +966,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaBirreriaPedavena -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaBirreriaPedavena">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Piazza di Fiera 13</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -991,9 +1002,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaTrattoriaDueMori -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AnticaTrattoriaDueMori">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via San Marco, 11</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1027,8 +1038,8 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#BollicineEMusica2016 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#BollicineEMusica2016">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>28/05/2016 – 23.30</endDateAndTime>
@@ -1040,9 +1051,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Brigolina -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Brigolina">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#agritourism"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Strada Di Candriai, 6</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1075,9 +1086,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CasadelCioccolato -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CasadelCioccolato">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cafe"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cafe"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via Rodolfo Belenzani, 21</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1110,9 +1121,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Clesio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Clesio">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Vittorio Alfieri 1</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1146,9 +1157,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Crucolo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Crucolo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Loc. Val Campelle | Localita Val Campelle</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1182,10 +1193,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DOC -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DOC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Milano, 148</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1219,9 +1230,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DaAlbert -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#DaAlbert">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via Bernardino Bomporto, 2</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1254,9 +1265,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Duo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Duo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Torre Vanga, 14</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1290,9 +1301,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Everest -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Everest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Corso Alpini 14</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1325,9 +1336,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Fiorentina -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Fiorentina">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via Calepina 4</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1360,9 +1371,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ForsterbrauTrento -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ForsterbrauTrento">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Oss Mazzurana 38</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1396,7 +1407,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FrenchDinner -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FrenchDinner">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>23/11/2016 – 22.30</endDateAndTime>
@@ -1408,9 +1419,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GamberoRosso -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GamberoRosso">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Torre d&apos;Augusto N. 25</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1443,10 +1454,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GreenTower -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#GreenTower">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Torre Verde, 29</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1480,7 +1491,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenByPasi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenByPasi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SocialEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>31/10/2016 – 23:30</endDateAndTime>
@@ -1492,7 +1503,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenConLaMagia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HalloweenConLaMagia">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#ChildrenEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>31/10/2016 – 20:30</endDateAndTime>
@@ -1504,9 +1515,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HappyHour -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#HappyHour">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Fratelli Perini 57</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1540,9 +1551,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#IlCappello -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#IlCappello">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#osteria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazzetta Bruno Lunelli 5</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1575,7 +1586,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country"/>
     </owl:NamedIndividual>
     
 
@@ -1583,9 +1594,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Osteria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#osteria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Don Arcangelo Rizzi 11</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1619,9 +1630,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Maranza -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Maranza">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>strada per maranza 23</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1654,7 +1665,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
     </owl:NamedIndividual>
     
 
@@ -1662,9 +1673,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bistro"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bistro"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Malpaga, 20</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1698,9 +1709,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Alto Adige 164/B</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1734,9 +1745,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OldWildWest -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OldWildWest">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazza Delle Ddonne Lavoratrici, 13 | Corso Del Lavoro e Della Scienza</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1770,9 +1781,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Orient -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Orient">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Don Giovanni Battista Zanella 3</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1806,9 +1817,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OrsoGrigio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OrsoGrigio">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Degli Orti 19</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1842,9 +1853,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Piazza Mario Pasi 2</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1877,7 +1888,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PersianDinner -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PersianDinner">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>12/10/2016 – 22:30</endDateAndTime>
@@ -1889,7 +1900,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PeruvianDinner -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#PeruvianDinner">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FoodEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>3/11/2016 – 22:30</endDateAndTime>
@@ -1901,9 +1912,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piedicastello -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Piedicastello">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trattoria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazza di Piedicastello 12</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -1937,9 +1948,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Plan -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Plan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Bar"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bar"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Largo Giosue&apos; Carducci 38</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -1972,9 +1983,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Planet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Planet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via Padre Eusebio Chini 33</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2008,7 +2019,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#CulturalFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>04/12/2016 – 24:00</endDateAndTime>
@@ -2020,9 +2031,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RoadhouseGrill -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RoadhouseGrill">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Steakhouse"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via del Brennero 146</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2056,10 +2067,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SaporiMediterranei -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#SaporiMediterranei">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via R. da Sanseverino 39/4 | Vicino al MUSE</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2093,9 +2104,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Saporoso -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Saporoso">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Dei Mille 1</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2129,9 +2140,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Subway -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Subway">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via Rodolfo Belenzani 43-45</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2165,9 +2176,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Terramia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Terramia">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Calepina 39</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2201,7 +2212,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MusicFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>3/009/2016 – 2:00</endDateAndTime>
@@ -2213,9 +2224,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tognola -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tognola">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Passo Rolle 21 | Alpe Tognola</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2249,7 +2260,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city"/>
         <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114802</population>
     </owl:NamedIndividual>
     
@@ -2258,10 +2269,10 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trittico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trittico">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pizzeria"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazza del Tridente 19</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2294,9 +2305,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via dietro le Mura A 53</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2329,9 +2340,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VecchiaTrento -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VecchiaTrento">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Santa Croce 88</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2365,9 +2376,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Agritourism"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#agritourism"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Localita Ponte Alto 26 | Cognola</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2400,7 +2411,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Suburb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
     </owl:NamedIndividual>
     
 
@@ -2408,9 +2419,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Viote -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Viote">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MountainHut"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Strada Delle Viote 6 | Monte Bondone</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -2443,9 +2454,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlVo’ -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AlVo’">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Vicolo del Vo, 11</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2478,7 +2489,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AperitemaSull&apos;Amore -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AperitemaSull&apos;Amore">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Seminar"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>14/03/2014 – 23:00</endDateAndTime>
@@ -2490,9 +2501,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#McDonald’s -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#McDonald’s">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#FastFood"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
         <adressStreet>Via di Madonna Bianca 5</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2526,9 +2537,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Niky’s -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Niky’s">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via San Pio X 29</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2562,9 +2573,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RosaD’Oro -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#RosaD’Oro">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Restaurant"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Piazza Santa Maria Maggiore 21</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
@@ -2598,9 +2609,9 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tetley’s -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Tetley’s">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pub"/>
-        <AddressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
-        <AddressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub"/>
+        <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
+        <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
         <adressStreet>Via Degli Orti 1</adressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
@@ -2641,9 +2652,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Construction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Event"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Geographical-Object"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
