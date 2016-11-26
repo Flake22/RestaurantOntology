@@ -50,6 +50,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressSuburb -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressSuburb">
@@ -72,6 +89,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
     </owl:ObjectProperty>
     
 
@@ -105,17 +131,13 @@
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber"/>
     
 
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -323,8 +345,6 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -472,6 +492,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#alpineHut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#alpineHut">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
+        <rdfs:comment>building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact">
@@ -521,7 +551,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:comment>event devoted to children</rdfs:comment>
+        <rdfs:comment>event devoted to children, i.e. a young people of either sex</rdfs:comment>
     </owl:Class>
     
 
@@ -548,7 +578,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
-        <rdfs:comment>a building that is used for business activities</rdfs:comment>
+        <rdfs:comment>a building connected with or engaged in or sponsored by or used in commerce or commercial enterprises</rdfs:comment>
     </owl:Class>
     
 
@@ -571,11 +601,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival">
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:comment>festival featuring arts and events specific to a particular culture, especially one celebrating and promoting that culture in a wider public context</rdfs:comment>
+        <rdfs:comment>event of or relating to the arts and manners that a group favors</rdfs:comment>
     </owl:Class>
     
 
@@ -630,7 +660,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
-        <rdfs:comment>inexpensive food (hamburgers or chicken or milkshakes) prepared and served quickly</rdfs:comment>
+        <rdfs:comment>eating estabilishment where inexpensive food (hamburgers or chicken or milkshakes) are prepared and served quickly</rdfs:comment>
     </owl:Class>
     
 
@@ -638,15 +668,26 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodFestival"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:comment>an event that uses food as its central theme</rdfs:comment>
+        <rdfs:comment>festival, usually held annually, that uses food, often produce, as its central theme.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodFestival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodFestival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object">
+        <rdfs:comment>a tangible and visible entity determined by geography</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -654,16 +695,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
-        <rdfs:comment>A mountain hut (also known as alpine hut, mountain shelter, mountain refuge, mountain lodge, and mountain hostel) is a building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers.</rdfs:comment>
+        <rdfs:comment>building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival -->
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival">
+    <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:comment>an entertainment event featuring a number of musical performers or bands of a certain genre or centered on a theme</rdfs:comment>
+        <rdfs:comment>event devoted to musical activity (singing or whistling etc.)</rdfs:comment>
     </owl:Class>
     
 
@@ -707,7 +748,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent"/>
         <rdfs:comment>any meeting for an exchange of ideas</rdfs:comment>
     </owl:Class>
     
@@ -717,7 +758,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:comment>an event characteristic of persons forming groups</rdfs:comment>
+        <rdfs:comment>event attended by sociable people or having the purpose of sociability</rdfs:comment>
     </owl:Class>
     
 
@@ -1110,7 +1151,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#BollicineEMusica2016">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>28/05/2016 – 23.30</endDateAndTime>
@@ -2090,7 +2131,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#QuizzaMi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>04/12/2016 – 24:00</endDateAndTime>
@@ -2283,7 +2324,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#TheJackACDCTributeBandGambrinusLive">
-        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicFestival"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
         <endDateAndTime>3/009/2016 – 2:00</endDateAndTime>
