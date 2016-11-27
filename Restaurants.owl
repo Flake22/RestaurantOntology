@@ -169,6 +169,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contactCell">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -828,7 +829,8 @@
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Martignano"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via ai Bolleri, 12/6</addressStreet>
+        <addressHouseNumber>12/6</addressHouseNumber>
+        <addressStreet>Via ai Bolleri</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -865,7 +867,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Verdi, 77</addressStreet>
+        <addressHouseNumber>77</addressHouseNumber>
+        <addressStreet>Via Verdi</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -902,7 +905,8 @@
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Villazzano"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Galassa 12</addressStreet>
+        <addressHouseNumber>12</addressHouseNumber>
+        <addressStreet>Via Galassa</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -939,7 +943,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Vicolo San Marco 6</addressStreet>
+        <addressHouseNumber>6</addressHouseNumber>
+        <addressStreet>Vicolo San Marco</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -973,8 +978,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VigoMeano"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Strada Alle Gorghe 17 | Vigo Meano</addressStreet>
+        <addressHouseNumber>17</addressHouseNumber>
+        <addressStreet>Strada Alle Gorghe</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -1010,7 +1017,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Ezio Maccani 191/d</addressStreet>
+        <addressHouseNumber>191/d</addressHouseNumber>
+        <addressStreet>Via Ezio Maccani</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1046,7 +1054,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazzetta Dell&apos;Anfiteatro 10 | Vicolo San marco</addressStreet>
+        <addressHouseNumber>10</addressHouseNumber>
+        <addressStreet>Piazzetta Dell&apos;Anfiteatro | Vicolo San marco</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1082,7 +1091,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Piazza di Fiera 13</addressStreet>
+        <addressHouseNumber>13</addressHouseNumber>
+        <addressStreet>Piazza di Fiera</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -1118,7 +1128,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via San Marco, 11</addressStreet>
+        <addressHouseNumber>11</addressHouseNumber>
+        <addressStreet>Via San Marco</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -1167,7 +1178,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Strada Di Candriai, 6</addressStreet>
+        <addressHouseNumber>6</addressHouseNumber>
+        <addressStreet>Strada Di Candriai</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1202,7 +1214,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via Rodolfo Belenzani, 21</addressStreet>
+        <addressHouseNumber>21</addressHouseNumber>
+        <addressStreet>Via Rodolfo Belenzani</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1237,7 +1250,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Vittorio Alfieri 1</addressStreet>
+        <addressHouseNumber>1</addressHouseNumber>
+        <addressStreet>Via Vittorio Alfieri</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1262,6 +1276,14 @@
         <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
         <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
         <wifi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wifi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cognola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cognola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
     </owl:NamedIndividual>
     
 
@@ -1310,7 +1332,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Milano, 148</addressStreet>
+        <addressHouseNumber>148</addressHouseNumber>
+        <addressStreet>Via Milano</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1346,7 +1369,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via Bernardino Bomporto, 2</addressStreet>
+        <addressHouseNumber>2</addressHouseNumber>
+        <addressStreet>Via Bernardino Bomporto</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1381,7 +1405,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Torre Vanga, 14</addressStreet>
+        <addressHouseNumber>14</addressHouseNumber>
+        <addressStreet>Via Torre Vanga</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -1417,7 +1442,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Corso Alpini 14</addressStreet>
+        <addressHouseNumber>14</addressHouseNumber>
+        <addressStreet>Corso Alpini</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1452,7 +1478,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via Calepina 4</addressStreet>
+        <addressHouseNumber>4</addressHouseNumber>
+        <addressStreet>Via Calepina</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1487,7 +1514,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Oss Mazzurana 38</addressStreet>
+        <addressHouseNumber>38</addressHouseNumber>
+        <addressStreet>Via Oss Mazzurana</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1535,7 +1563,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Torre d&apos;Augusto N. 25</addressStreet>
+        <addressHouseNumber>25</addressHouseNumber>
+        <addressStreet>Via Torre d&apos;Augusto</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1571,7 +1600,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Torre Verde, 29</addressStreet>
+        <addressHouseNumber>29</addressHouseNumber>
+        <addressStreet>Via Torre Verde</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -1631,7 +1661,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Fratelli Perini 57</addressStreet>
+        <addressHouseNumber>57</addressHouseNumber>
+        <addressStreet>Via Fratelli Perini</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1667,7 +1698,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazzetta Bruno Lunelli 5</addressStreet>
+        <addressHouseNumber>5</addressHouseNumber>
+        <addressStreet>Piazzetta Bruno Lunelli</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1710,7 +1742,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Don Arcangelo Rizzi 11</addressStreet>
+        <addressHouseNumber>11</addressHouseNumber>
+        <addressStreet>Via Don Arcangelo Rizzi</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1746,7 +1779,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>strada per maranza 23</addressStreet>
+        <addressHouseNumber>23</addressHouseNumber>
+        <addressStreet>Strada per maranza</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1789,7 +1823,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Malpaga, 20</addressStreet>
+        <addressHouseNumber>20</addressHouseNumber>
+        <addressStreet>Via Malpaga</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1818,6 +1853,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MonteBondone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MonteBondone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus">
@@ -1825,7 +1868,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Alto Adige 164/B</addressStreet>
+        <addressHouseNumber>164/B</addressHouseNumber>
+        <addressStreet>Via Alto Adige</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1861,7 +1905,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazza Delle Ddonne Lavoratrici, 13 | Corso Del Lavoro e Della Scienza</addressStreet>
+        <addressHouseNumber>13</addressHouseNumber>
+        <addressStreet>Piazza Delle Ddonne Lavoratrici | Corso Del Lavoro e Della Scienza</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1882,7 +1927,7 @@
         <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</serviceRating>
         <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
         <takeAway rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAway>
-        <telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3900461915572</telephone>
+        <telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0461915572</telephone>
         <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
         <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
         <wifi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wifi>
@@ -1897,7 +1942,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Don Giovanni Battista Zanella 3</addressStreet>
+        <addressHouseNumber>3</addressHouseNumber>
+        <addressStreet>Via Don Giovanni Battista Zanella</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1933,7 +1979,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Degli Orti 19</addressStreet>
+        <addressHouseNumber>19</addressHouseNumber>
+        <addressStreet>Via Degli Orti</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -1969,7 +2016,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Piazza Mario Pasi 2</addressStreet>
+        <addressHouseNumber>2</addressHouseNumber>
+        <addressStreet>Piazza Mario Pasi</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2028,7 +2076,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazza di Piedicastello 12</addressStreet>
+        <addressHouseNumber>2</addressHouseNumber>
+        <addressStreet>Piazza di Piedicastello</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2064,7 +2113,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Largo Giosue&apos; Carducci 38</addressStreet>
+        <addressHouseNumber>38</addressHouseNumber>
+        <addressStreet>Largo Giosue&apos; Carducci</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2099,7 +2149,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via Padre Eusebio Chini 33</addressStreet>
+        <addressHouseNumber>33</addressHouseNumber>
+        <addressStreet>Via Padre Eusebio Chini</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2147,7 +2198,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via del Brennero 146</addressStreet>
+        <addressHouseNumber>146</addressHouseNumber>
+        <addressStreet>Via del Brennero</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2184,7 +2236,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via R. da Sanseverino 39/4 | Vicino al MUSE</addressStreet>
+        <addressHouseNumber>39/4</addressHouseNumber>
+        <addressStreet>Via R. da Sanseverino | Vicino al MUSE</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2220,7 +2273,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Dei Mille 1</addressStreet>
+        <addressHouseNumber>1</addressHouseNumber>
+        <addressStreet>Via Dei Mille</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2256,8 +2310,10 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via Rodolfo Belenzani 43-45</addressStreet>
+        <addressHouseNumber>43-45</addressHouseNumber>
+        <addressStreet>Via Rodolfo Belenzani</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
+        <contactCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3333599472</contactCell>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
         <isOpenForBreakfast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpenForBreakfast>
@@ -2277,7 +2333,6 @@
         <serviceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</serviceRating>
         <tablesOutside rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tablesOutside>
         <takeAway rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</takeAway>
-        <telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3333599472</telephone>
         <vegetarianDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</vegetarianDishes>
         <wheelchairAccessible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</wheelchairAccessible>
         <wifi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</wifi>
@@ -2292,7 +2347,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Calepina 39</addressStreet>
+        <addressHouseNumber>39</addressHouseNumber>
+        <addressStreet>Via Calepina</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2340,7 +2396,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Passo Rolle 21 | Alpe Tognola</addressStreet>
+        <addressHouseNumber>21</addressHouseNumber>
+        <addressStreet>Via Passo Rolle| Alpe Tognola</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2386,7 +2443,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazza del Tridente 19</addressStreet>
+        <addressHouseNumber>19</addressHouseNumber>
+        <addressStreet>Piazza del Tridente</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2421,7 +2479,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via dietro le Mura A 53</addressStreet>
+        <addressHouseNumber>A 53</addressHouseNumber>
+        <addressStreet>Via dietro le Mura</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -2456,6 +2515,7 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
+        <addressHouseNumber>88</addressHouseNumber>
         <addressStreet>Via Santa Croce 88</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
@@ -2485,14 +2545,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VigoMeano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VigoMeano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#VillaMadruzzo">
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant"/>
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Cognola"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Localita Ponte Alto 26 | Cognola</addressStreet>
+        <addressHouseNumber>26</addressHouseNumber>
+        <addressStreet>Localita Ponte Alto 26</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2534,8 +2604,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
+        <addressSuburb rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#MonteBondone"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Strada Delle Viote 6 | Monte Bondone</addressStreet>
+        <addressHouseNumber>6</addressHouseNumber>
+        <addressStreet>Strada Delle Viote</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2570,7 +2642,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Vicolo del Vo, 11</addressStreet>
+        <addressHouseNumber>11</addressHouseNumber>
+        <addressStreet>Vicolo del Vo</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2617,7 +2690,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</acceptsReservations>
-        <addressStreet>Via di Madonna Bianca 5</addressStreet>
+        <addressHouseNumber>5</addressHouseNumber>
+        <addressStreet>Via di Madonna Bianca</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2653,7 +2727,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via San Pio X 29</addressStreet>
+        <addressHouseNumber>29</addressHouseNumber>
+        <addressStreet>Via San Pio X</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
@@ -2689,7 +2764,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Piazza Santa Maria Maggiore 21</addressStreet>
+        <addressHouseNumber>21</addressHouseNumber>
+        <addressStreet>Piazza Santa Maria Maggiore</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</glutenFreeDishes>
@@ -2725,7 +2801,8 @@
         <addressCity rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Trento"/>
         <addressCountry rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Italia"/>
         <acceptsReservations rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</acceptsReservations>
-        <addressStreet>Via Degli Orti 1</addressStreet>
+        <addressHouseNumber>1</addressHouseNumber>
+        <addressStreet>Via Degli Orti</addressStreet>
         <childrenMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</childrenMenu>
         <cousineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</cousineRating>
         <glutenFreeDishes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</glutenFreeDishes>
