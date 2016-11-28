@@ -199,7 +199,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#endDateAndTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -401,7 +401,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#startDateAndTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#temporal"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -533,6 +533,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#edifice"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction"/>
         <rdfs:comment>a structure that has a roof and walls and stands more or less permanently in one place</rdfs:comment>
     </owl:Class>
@@ -1165,8 +1166,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#LeDueSpade"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>28/05/2016 – 23.30</endDateAndTime>
-        <startDateAndTime>28/05/2016 – 18.30</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-05-28T23:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-05-28T18:30:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -1550,8 +1551,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>23/11/2016 – 22.30</endDateAndTime>
-        <startDateAndTime>23/11/2016 – 19.30</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-23T22:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-23T19:30:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -1636,8 +1637,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Pasi"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>31/10/2016 – 23:30</endDateAndTime>
-        <startDateAndTime>31/10/2016 – 19:00</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-31T23:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-31T19:00:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -1648,8 +1649,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#AmericaGraffiti"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>31/10/2016 – 20:30</endDateAndTime>
-        <startDateAndTime>31/10/2016 – 19:30</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-31T20:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-31T19:30:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -2051,8 +2052,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>12/10/2016 – 22:30</endDateAndTime>
-        <startDateAndTime>12/10/2016 – 19:30</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-12T22:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-12T19:30:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -2063,8 +2064,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#Moki"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>3/11/2016 – 22:30</endDateAndTime>
-        <startDateAndTime>3/11/2016 – 18:30</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-03T22:30:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-03T18:30:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -2185,8 +2186,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>04/12/2016 – 24:00</endDateAndTime>
-        <startDateAndTime>04/12/2016 – 21:00</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-04T24:00:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-04T21:00:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -2383,8 +2384,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#OfficinaGambrinus"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>3/009/2016 – 2:00</endDateAndTime>
-        <startDateAndTime>2/09/2016 – 23:00</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-03T02:00:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-02T23:00:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
@@ -2677,8 +2678,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar"/>
         <isHosteBy rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#UvaEMenta"/>
         <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</duration>
-        <endDateAndTime>14/03/2014 – 23:00</endDateAndTime>
-        <startDateAndTime>14/03/2014 – 19:00</startDateAndTime>
+        <endDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-14T23:00:00</endDateAndTime>
+        <startDateAndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-14T19:00:00</startDateAndTime>
     </owl:NamedIndividual>
     
 
