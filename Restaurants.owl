@@ -23,19 +23,11 @@
 
     
 
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCity -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCity">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city"/>
     </owl:ObjectProperty>
     
@@ -45,24 +37,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressCountry">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country"/>
     </owl:ObjectProperty>
     
 
@@ -71,6 +47,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressSuburb">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb"/>
     </owl:ObjectProperty>
     
@@ -89,15 +66,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#isHosteBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#address"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
     </owl:ObjectProperty>
     
 
@@ -131,13 +99,16 @@
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressHouseNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#addressStreet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -346,6 +317,7 @@
     <!-- http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#postCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
