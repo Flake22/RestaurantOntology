@@ -162,6 +162,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contactCell">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -490,7 +491,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#territorialDivision"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
         <rdfs:comment>a district defined for administrative purposes</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -502,7 +502,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -512,7 +511,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact">
         <rdfs:comment>a man-made object taken as a whole</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -524,7 +522,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a counter where you can obtain food or drink</rdfs:comment>
         <rdfs:comment>a room or establishment where alcoholic drinks are served over a counter</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -535,7 +532,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#bistro">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a small informal restaurant; serves wine</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -547,7 +543,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#edifice"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction"/>
         <rdfs:comment>a structure that has a roof and walls and stands more or less permanently in one place</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -558,7 +553,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#cafe">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a small restaurant where drinks and snacks are sold</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -569,7 +563,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#childrenEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>event devoted to children, i.e. a young people of either sex</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -580,7 +573,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#chophouse">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -591,7 +583,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#city">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a large and densely populated urban area; may include several independent administrative districts</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -602,7 +593,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:comment>a building connected with or engaged in or sponsored by or used in commerce or commercial enterprises</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -613,7 +603,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact"/>
         <rdfs:comment>a thing constructed; a complex entity constructed of many parts</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -624,7 +613,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#country">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a politically organized body of people under a single government</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -635,7 +623,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>event of or relating to the arts and manners that a group favors</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -647,7 +634,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:comment>a building where people go to eat</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -659,7 +645,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingPlace"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:comment>a building where people go to eat</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -670,7 +655,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingPlace">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
         <rdfs:comment>a building where people go to eat</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -681,7 +665,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#edifice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#construction"/>
         <rdfs:comment>a structure that has a roof and walls and stands more or less permanently in one place</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -691,7 +674,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event">
         <rdfs:comment>something that happens at a given place and time</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -702,7 +684,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#fastFood">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>eating estabilishment where inexpensive food (hamburgers or chicken or milkshakes) are prepared and served quickly</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -714,7 +695,6 @@
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodFestival"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>festival, usually held annually, that uses food, often produce, as its central theme.</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -724,7 +704,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#foodFestival">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -734,7 +713,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object">
         <rdfs:comment>a tangible and visible entity determined by geography</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -745,7 +723,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#mountainHut">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>building located high in the mountains, generally accessible only by foot, intended to provide food and shelter to mountaineers, climbers and hikers</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -756,7 +733,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#musicEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>event devoted to musical activity (singing or whistling etc.)</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -766,9 +742,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#osteria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
-        <rdfs:comment>in Italy was originally a place serving wine and simple food. Lately, the emphasis has shifted to the food, but menus tend to be short, with an emphasis on local specialities such as pasta, grilled meat or fish, and often served at shared tables</rdfs:comment>
-
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
+        <rdfs:comment>in Italy was originally a place serving wine and simple food. Lately, the emphasis has shifted to the food, but menus tend to be short, with an emphasis on local specialties such as pasta, grilled meat or fish, and often served at shared tables</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Main_Page</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -778,7 +753,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pizzeria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a shop where pizzas are made and sold</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -789,7 +763,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#pub">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>tavern consisting of a building with a bar and public rooms; often provides light meals</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -800,7 +773,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#restaurant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a building where people go to eat</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -811,7 +783,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#seminar">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#culturalEvent"/>
         <rdfs:comment>any meeting for an exchange of ideas</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -822,7 +793,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#socialEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#event"/>
         <rdfs:comment>event attended by sociable people or having the purpose of sociability</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -833,7 +803,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#steakhouse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>a restaurant that specializes in steaks</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -844,7 +813,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#structure">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#artifact"/>
         <rdfs:comment>a thing constructed; a complex entity constructed of many parts</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -855,7 +823,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#suburb">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#administrativeDivision"/>
         <rdfs:comment>a residential district located on the outskirts of a city</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -866,7 +833,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#territorialDivision">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#geographical-Object"/>
         <rdfs:comment>a district defined for administrative purposes</rdfs:comment>
-
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -877,8 +843,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#trattoria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#eatingEstabilishment"/>
         <rdfs:comment>A trattoria is an Italian-style eating establishment, less formal than a ristorante, but more formal than an osteria. There are generally no printed menus, the service is casual, wine is sold by the decanter rather than the bottle, prices are low, and the emphasis is on a steady clientele rather than on haute cuisine. The food is modest but plentiful (mostly following regional and local recipes) and in some instances is even served family-style (i.e. at common tables)</rdfs:comment>
-
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://wordnetweb.princeton.edu/perl/webwn</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Main_Page</rdfs:isDefinedBy>
     </owl:Class>
     
 

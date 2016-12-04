@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1480706823339" name="duplicate:http://www.semanticweb.org/federica/ontologies/2016/9/restaurants" uri="Restaurants.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1480706823339" name="duplicate:http://www.semanticweb.org/federica/ontologies/2016/9/restaurants" uri="tmp.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1480706823339" name="duplicate:http://www.semanticweb.org/federica/ontologies/2016/9/restaurants" uri="Restaurants_old.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480845260989" name="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants" uri="Restaurants.owl"/>
     </group>
 </catalog>
