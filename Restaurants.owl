@@ -161,7 +161,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contactCell">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contact"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -697,7 +697,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#telephone">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#contact"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#commercialBuilding"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federica/ontologies/2016/9/restaurants#building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
